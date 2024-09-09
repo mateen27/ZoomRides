@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="150" cy="150" r="145" fill="url(#grad)" />
+  
+  <!-- Stylized 'Z' -->
+  <path d="M90 80 L210 80 L90 220 L210 220" stroke="white" stroke-width="20" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Speed lines -->
+  <path d="M230 150 L270 150" stroke="white" stroke-width="15" stroke-linecap="round">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" />
+  </path>
+  <path d="M220 120 L260 120" stroke="white" stroke-width="10" stroke-linecap="round">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0.3s" />
+  </path>
+  <path d="M220 180 L260 180" stroke="white" stroke-width="10" stroke-linecap="round">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="0.6s" />
+  </path>
+  
+  <!-- Text -->
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="bold">ZoomRides</text>
+</svg>
